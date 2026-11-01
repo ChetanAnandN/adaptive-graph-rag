@@ -1,0 +1,103 @@
+[
+  {
+    "id": "q1",
+    "question": "How does backpropagation work in neural networks?",
+    "supporting_entities": [
+      "Backpropagation",
+      "Neural Network",
+      "Gradient Descent",
+      "Loss Function",
+      "Weights",
+      "Chain Rule"
+    ],
+    "category": "neural_networks"
+  },
+  {
+    "id": "q2",
+    "question": "What are the main types of machine learning?",
+    "supporting_entities": [
+      "Machine Learning",
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "Reinforcement Learning"
+    ],
+    "category": "machine_learning"
+  },
+  {
+    "id": "q3",
+    "question": "How does the attention mechanism work in transformers?",
+    "supporting_entities": [
+      "Attention Mechanism",
+      "Transformer",
+      "Self-Attention",
+      "Multi-Head Attention",
+      "Encoder",
+      "Decoder"
+    ],
+    "category": "nlp"
+  },
+  {
+    "id": "q4",
+    "question": "What is the role of activation functions in neural networks?",
+    "supporting_entities": [
+      "Activation Function",
+      "Neural Network",
+      "ReLU",
+      "Sigmoid",
+      "Non-linearity",
+      "Vanishing Gradient Problem"
+    ],
+    "category": "neural_networks"
+  },
+  {
+    "id": "q5",
+    "question": "How are word embeddings used in natural language processing?",
+    "supporting_entities": [
+      "Word Embeddings",
+      "Natural Language Processing",
+      "Word2Vec",
+      "GloVe",
+      "Sentence Embeddings",
+      "Vector Space"
+    ],
+    "category": "nlp"
+  },
+  {
+    "id": "q6",
+    "question": "What techniques prevent overfitting in machine learning models?",
+    "supporting_entities": [
+      "Overfitting",
+      "Regularization",
+      "Dropout",
+      "L2 Regularization",
+      "Cross-Validation",
+      "Bias-Variance Tradeoff"
+    ],
+    "category": "neural_networks"
+  },
+  {
+    "id": "q7",
+    "question": "How does Proximal Policy Optimization work in reinforcement learning?",
+    "supporting_entities": [
+      "Proximal Policy Optimization",
+      "PPO",
+      "Reinforcement Learning",
+      "Policy Gradient",
+      "Policy",
+      "Advantage Function"
+    ],
+    "category": "machine_learning"
+  },
+  {
+    "id": "q8",
+    "question": "What is Retrieval-Augmented Generation and how does it use knowledge graphs?",
+    "supporting_entities": [
+      "Retrieval-Augmented Generation",
+      "RAG",
+      "Knowledge Graphs",
+      "Information Retrieval",
+      "Language Model"
+    ],
+    "category": "nlp"
+  }
+]

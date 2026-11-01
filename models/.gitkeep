@@ -1,0 +1,2 @@
+# This directory stores PPO checkpoints.
+# Checkpoints are created automatically during training.

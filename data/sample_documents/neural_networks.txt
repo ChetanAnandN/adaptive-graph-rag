@@ -1,0 +1,51 @@
+Neural Networks: Architecture, Learning, and Optimization
+
+Neural Networks are computational models inspired by the biological structure of the human brain. A Neural Network consists of interconnected layers of artificial neurons that process information through weighted connections.
+
+Architecture of Neural Networks
+
+A typical Neural Network architecture contains three types of layers: the Input Layer, Hidden Layers, and the Output Layer. The Input Layer receives raw data features and passes them to the first Hidden Layer. Each Hidden Layer applies a linear transformation followed by a non-linear Activation Function. The Output Layer produces the final prediction or classification result.
+
+Neurons are the fundamental computational units of a Neural Network. Each Neuron receives inputs, multiplies them by learnable Weights, adds a Bias term, and applies an Activation Function. The mathematical operation of a single Neuron can be expressed as: output = activation(sum(inputs * weights) + bias).
+
+Activation Functions
+
+Activation Functions introduce non-linearity into Neural Networks. Without Activation Functions, a deep Neural Network would collapse into a single linear transformation regardless of depth.
+
+The ReLU Activation Function (Rectified Linear Unit) is the most widely used Activation Function in modern deep learning. ReLU outputs the input directly if positive, and zero otherwise. ReLU helps mitigate the Vanishing Gradient Problem that affects deep networks during training.
+
+The Sigmoid Activation Function maps any input to a value between zero and one. Sigmoid is commonly used in the Output Layer for binary classification tasks. However, Sigmoid suffers from the Vanishing Gradient Problem when inputs have large magnitude.
+
+The Tanh Activation Function is similar to Sigmoid but maps inputs to values between negative one and positive one. Tanh is zero-centered, which can improve convergence during training compared to Sigmoid.
+
+Forward Propagation
+
+Forward Propagation is the process by which input data flows through the Neural Network from the Input Layer to the Output Layer. During Forward Propagation, each layer computes its output by applying Weights, Biases, and Activation Functions sequentially. The final output of Forward Propagation is the network's prediction, which is then compared against the true label using a Loss Function.
+
+Loss Functions and Optimization
+
+A Loss Function measures the discrepancy between the Neural Network's prediction and the actual target value. The Cross-Entropy Loss Function is widely used for classification tasks. The Mean Squared Error Loss Function is commonly used for regression problems.
+
+Gradient Descent is the primary optimization algorithm used to train Neural Networks. Gradient Descent works by computing the gradient of the Loss Function with respect to each Weight in the network, and then updating Weights in the direction that reduces the Loss.
+
+Stochastic Gradient Descent (SGD) is a variant of Gradient Descent that computes gradients using a random subset (mini-batch) of training data. SGD introduces noise into the gradient estimates, which can help escape local minima during training.
+
+The Adam Optimizer combines the advantages of two Gradient Descent variants: AdaGrad and RMSProp. Adam maintains adaptive learning rates for each parameter and includes momentum terms. Adam is one of the most popular optimizers for training deep Neural Networks.
+
+Backpropagation
+
+Backpropagation is the fundamental algorithm used to compute gradients in Neural Networks. Backpropagation applies the chain rule of calculus to efficiently compute the gradient of the Loss Function with respect to every Weight and Bias in the network.
+
+During Backpropagation, the error signal flows backwards from the Output Layer through the Hidden Layers to the Input Layer. At each layer, Backpropagation computes local gradients and propagates them to the preceding layer. These gradients are then used by Gradient Descent to update the network's parameters.
+
+The Vanishing Gradient Problem occurs when gradients become extremely small during Backpropagation through many layers. This makes it difficult for early layers to learn effectively. Solutions include using ReLU Activation Functions, Batch Normalization, and Residual Connections.
+
+Regularization Techniques
+
+Overfitting occurs when a Neural Network memorizes the training data instead of learning generalizable patterns. Regularization techniques help prevent Overfitting and improve the model's ability to generalize to unseen data.
+
+Dropout is a regularization technique where random Neurons are temporarily deactivated during training. Dropout prevents Neurons from co-adapting and forces the network to learn more robust representations. During inference, all Neurons are active but their outputs are scaled appropriately.
+
+L2 Regularization adds a penalty term proportional to the sum of squared Weights to the Loss Function. L2 Regularization encourages the network to use smaller Weights, which reduces model complexity and helps prevent Overfitting.
+
+Batch Normalization normalizes the inputs to each layer by adjusting and scaling them. Batch Normalization accelerates training by reducing internal covariate shift and acts as a mild regularizer. Batch Normalization is typically applied between the linear transformation and the Activation Function in each layer.

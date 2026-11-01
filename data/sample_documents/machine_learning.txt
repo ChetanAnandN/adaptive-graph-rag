@@ -1,0 +1,47 @@
+Machine Learning: Paradigms, Algorithms, and Applications
+
+Machine Learning is a subfield of Artificial Intelligence that enables systems to learn patterns from data and make predictions without being explicitly programmed. Machine Learning algorithms improve their performance through experience and exposure to more data.
+
+Supervised Learning
+
+Supervised Learning is a Machine Learning paradigm where models are trained on labelled data consisting of input-output pairs. The goal of Supervised Learning is to learn a mapping function from inputs to outputs that generalizes to unseen data.
+
+Classification is a Supervised Learning task where the model predicts a discrete category or class label. Examples of Classification include spam detection, image recognition, and medical diagnosis. Common Classification algorithms include Logistic Regression, Support Vector Machines, Decision Trees, and Random Forests.
+
+Logistic Regression is a linear Classification algorithm that uses the Sigmoid function to model the probability of class membership. Despite its name, Logistic Regression is used for Classification rather than regression tasks.
+
+Support Vector Machines (SVM) find the optimal hyperplane that maximally separates different classes in the feature space. Support Vector Machines use kernel functions to handle non-linearly separable data by mapping inputs to higher-dimensional spaces.
+
+Decision Trees are tree-structured models that make predictions by recursively splitting the feature space based on feature thresholds. Decision Trees are interpretable and can capture non-linear relationships. Random Forests are an ensemble method that combines multiple Decision Trees to improve prediction accuracy and reduce Overfitting.
+
+Regression is a Supervised Learning task where the model predicts a continuous numerical value. Linear Regression fits a linear relationship between input features and the target variable. Polynomial Regression extends Linear Regression by including polynomial terms of the input features.
+
+Unsupervised Learning
+
+Unsupervised Learning is a Machine Learning paradigm where models discover patterns in unlabelled data without predefined output categories. Unsupervised Learning is useful for exploratory data analysis, dimensionality reduction, and finding hidden structures.
+
+Clustering is an Unsupervised Learning task that groups similar data points together based on their feature similarity. K-Means Clustering partitions data into K clusters by minimizing the within-cluster sum of squared distances. Hierarchical Clustering builds a tree of nested clusters by iteratively merging or splitting groups.
+
+Dimensionality Reduction reduces the number of features while preserving important information. Principal Component Analysis (PCA) is a linear Dimensionality Reduction technique that projects data onto orthogonal directions of maximum variance. t-SNE is a non-linear Dimensionality Reduction method commonly used for visualizing high-dimensional data in two or three dimensions.
+
+Reinforcement Learning
+
+Reinforcement Learning is a Machine Learning paradigm where an agent learns to make sequential decisions by interacting with an environment. The Reinforcement Learning agent receives rewards or penalties for its actions and aims to maximize cumulative reward over time.
+
+The Reinforcement Learning framework consists of key components: the Agent, the Environment, States, Actions, and Rewards. At each time step, the Agent observes the current State, selects an Action according to its Policy, receives a Reward, and transitions to a new State.
+
+A Policy maps states to actions and defines the agent's behaviour. The goal of Reinforcement Learning is to find an optimal Policy that maximizes expected cumulative reward. Policy Gradient methods directly optimize the Policy by computing gradients of expected reward with respect to policy parameters.
+
+Proximal Policy Optimization (PPO) is a state-of-the-art Policy Gradient algorithm developed by OpenAI. PPO uses a clipped surrogate objective to ensure stable policy updates. PPO strikes a balance between sample efficiency and implementation simplicity, making it one of the most widely used Reinforcement Learning algorithms.
+
+The Value Function estimates the expected cumulative reward from a given state. The Advantage Function measures how much better an action is compared to the average action in a given state. PPO uses the Advantage Function to weight policy gradient updates.
+
+Model Evaluation
+
+Model Evaluation assesses the performance and generalization ability of Machine Learning models. Common evaluation metrics depend on the task type.
+
+Accuracy measures the proportion of correct predictions for Classification tasks. Precision measures the proportion of true positive predictions among all positive predictions. Recall measures the proportion of actual positives that were correctly identified. The F1 Score is the harmonic mean of Precision and Recall.
+
+Cross-Validation is a robust Model Evaluation technique that partitions data into multiple folds and trains separate models on different fold combinations. K-Fold Cross-Validation uses K different train-test splits to provide a more reliable estimate of model performance.
+
+The Bias-Variance Tradeoff describes the tension between model simplicity and flexibility. High Bias leads to underfitting, where the model is too simple to capture data patterns. High Variance leads to Overfitting, where the model is too complex and fits noise in the training data.
